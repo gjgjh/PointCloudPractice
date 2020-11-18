@@ -109,6 +109,7 @@ void SpectralCluster::calLaplacianMatrix() {
 }
 
 std::vector<Eigen::VectorXd> SpectralCluster::doDecomposition(const Eigen::MatrixXf &matrix) {
+	// TODO: 使用大型矩阵特征分解
     Eigen::EigenSolver<Eigen::MatrixXf> es(laplacianMatrix);
     Eigen::VectorXf eigenvalues = es.eigenvalues().real();
     Eigen::MatrixXf eigenvectors = es.eigenvectors().real();
