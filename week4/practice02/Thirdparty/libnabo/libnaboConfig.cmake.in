@@ -1,0 +1,6 @@
+# - Config file for the libnabo package
+
+include(${CMAKE_CURRENT_LIST_DIR}/libnabo-targets.cmake)
+
+# This causes catkin_simple to link against these libraries
+set(libnabo_FOUND_CATKIN_PROJECT true)
