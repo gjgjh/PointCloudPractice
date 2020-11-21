@@ -14,7 +14,7 @@
 
 ```bash
 git clone https://github.com/gjgjh/PointCloudPractice
-cd PointCloudPractice/week4
+cd PointCloudPractice/week4/practice01
 mkdir build
 cd build
 cmake ..
