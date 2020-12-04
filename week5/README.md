@@ -1,6 +1,6 @@
 # PointNet
 
-使用Pytorch实现简单的PointNet (https://arxiv.org/abs/1612.00593)，对点云数据（ModelNet40数据集）进行分类。为简便起见，网络结构稍微有所改动，并且不包含特征变换模块。程序的实现部分参考 https://github.com/fxia22/pointnet.pytorch
+使用Pytorch实现简单的PointNet https://arxiv.org/abs/1612.00593 ，对点云数据（ModelNet40数据集）进行分类。为简便起见，网络结构稍微有所改动，并且不包含特征变换模块。程序的实现部分参考 https://github.com/fxia22/pointnet.pytorch
 
 ## 依赖库
 
