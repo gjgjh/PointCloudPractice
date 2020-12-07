@@ -1,4 +1,4 @@
-# 点云目标检测及精度评估
+# 3D目标检测及精度评估
 
 ## 目标检测
 
@@ -25,7 +25,7 @@ PointRCNN
 
 ### 训练
 
-PointRCNN训练部分详见其[README](https://github.com/sshaoshuai/PointRCNN)。
+PointRCNN训练部分详见其[README](https://github.com/sshaoshuai/PointRCNN)。此外，原仓库提供了一个预训练的权重可以使用。
 
 ### 预测
 
@@ -78,27 +78,26 @@ sudo apt-get install texlive-extra-utils # Mac下则需安装mactex
 
 ```bash
 Thank you for participating in our evaluation!
-mkdir: /Users/huiguo/Desktop/final_result/plot: File exists
 Loading detections...
 number of files for evaluation: 3769
   done.
 save /Users/huiguo/Desktop/final_result/plot/car_detection.txt
-car_detection AP: 27.415403 29.987959 31.105656
+car_detection AP: 96.911911 89.531288 88.749985
 fontconfig: Didn't find expected font family. Perhaps URW Type 1 fonts need installing? when opening font Helvetica, trying default
 PDFCROP 1.38, 2012/11/02 - Copyright (c) 2002-2012 by Heiko Oberdiek.
 ==> 1 page written on `car_detection.pdf'.
 save /Users/huiguo/Desktop/final_result/plot/car_orientation.txt
-car_orientation AP: 27.369240 29.853607 30.946621
+car_orientation AP: 96.902977 89.406799 88.545616
 fontconfig: Didn't find expected font family. Perhaps URW Type 1 fonts need installing? when opening font Helvetica, trying default
 PDFCROP 1.38, 2012/11/02 - Copyright (c) 2002-2012 by Heiko Oberdiek.
 ==> 1 page written on `car_orientation.pdf'.
 save /Users/huiguo/Desktop/final_result/plot/car_detection_ground.txt
-car_detection_ground AP: 26.841249 27.065199 27.653086
+car_detection_ground AP: 90.222801 87.899277 85.523643
 fontconfig: Didn't find expected font family. Perhaps URW Type 1 fonts need installing? when opening font Helvetica, trying default
 PDFCROP 1.38, 2012/11/02 - Copyright (c) 2002-2012 by Heiko Oberdiek.
 ==> 1 page written on `car_detection_ground.pdf'.
 save /Users/huiguo/Desktop/final_result/plot/car_detection_3d.txt
-car_detection_3d AP: 25.032032 26.549366 27.018415
+car_detection_3d AP: 89.200951 78.853203 77.914848
 fontconfig: Didn't find expected font family. Perhaps URW Type 1 fonts need installing? when opening font Helvetica, trying default
 PDFCROP 1.38, 2012/11/02 - Copyright (c) 2002-2012 by Heiko Oberdiek.
 ==> 1 page written on `car_detection_3d.pdf'.
@@ -106,11 +105,19 @@ Your evaluation results are available at:
 /Users/huiguo/Desktop/final_result
 ```
 
-绘制的Precision-Recall曲线如下图所示：
+绘制的Precision-Recall曲线（car_detection）如下图所示：
 
-<img src="./support_files/car_detection_3d.png" width = 65% height = 65% />
+<img src="./support_files/car_detection.png" width = 50% height = 50% />
 
-## TODO
+绘制的Precision-Recall曲线（car_orientation）如下图所示：
 
-- 由于训练的方式可能存在一定问题，目前三维目标检测的精度比较低，后续需进行改进
+<img src="./support_files/car_orientation.png" width = 50% height = 50% />
+
+绘制的Precision-Recall曲线（car_detection_ground）如下图所示：
+
+<img src="./support_files/car_detection_ground.png" width = 50% height = 50% />
+
+绘制的Precision-Recall曲线（car_detection_3d）如下图所示：
+
+<img src="./support_files/car_detection_3d.png" width = 50% height = 50% />
 
