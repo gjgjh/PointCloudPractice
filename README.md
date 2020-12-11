@@ -17,3 +17,4 @@
 - [week4](./week4)：KITTI激光点云处理（地面点云估计、点云聚类）
 - [week5](./week5)：PointNet点云分类
 - [week6](./week6)：3D目标检测及精度评估
+- [week7](./week7)：3D特征点提取
