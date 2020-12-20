@@ -18,3 +18,4 @@
 - [week5](./week5)：PointNet点云分类
 - [week6](./week6)：3D目标检测及精度评估
 - [week7](./week7)：3D特征点提取
+- [week8](./week8)：3D特征描述
